@@ -24,6 +24,11 @@ jobs:
         pip install requests pytz sendgrid
 
     - name: Run stock alert script
+      env:
+        TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+        SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+        SENDGRID_FROM_EMAIL: ${{ secrets.SENDGRID_FROM_EMAIL }}
+        SENDGRID_RECIPIENTS: ${{ secrets.SENDGRID_RECIPIENTS }}
       run: python stockAlertCode.py
 
     - name: Commit and push changes
