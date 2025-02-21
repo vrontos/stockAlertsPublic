@@ -21,8 +21,8 @@ This project is a Python-based stock alert system that monitors the price of spe
 1.  **Clone the Repository:**
 
     ```bash
-    git clone <YOUR_REPOSITORY_URL>
-    cd <YOUR_REPOSITORY_DIRECTORY>
+    git clone https://github.com/vrontos/stockAlertsPublic
+    cd stockAlertsPublic
     ```
 
 2.  **Install Dependencies:**
